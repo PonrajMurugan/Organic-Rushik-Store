@@ -27,6 +27,7 @@ function App() {
   return (
     <div className="">
       <Navbar />
+      <ScrollTop />
      
       <Routes>
         <Route path="/" element={
@@ -37,7 +38,7 @@ function App() {
             <Banners/>
          
             <Acheivers />
-            <ScrollTop />
+          
           </>
         } />
   
