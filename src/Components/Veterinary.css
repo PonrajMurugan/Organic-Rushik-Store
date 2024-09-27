@@ -98,7 +98,7 @@ background-size: cover;
     }
 
     .cards-image {
-        height: 150px;
+        height: auto;
     }
 
     .card-title {
@@ -117,6 +117,9 @@ background-size: cover;
 
     .vet-title {
         font-size: 2rem;
+    }
+    .cards-image {
+        height: auto;
     }
 
     .card-title {
