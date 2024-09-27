@@ -1,0 +1,122 @@
+.bk {
+    padding: 15px 0px;
+    background: linear-gradient(90deg, #43cea2, #185a9d);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link {
+    position: relative;
+    color: white;
+    transition: color 0.3s ease;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.nav-link:hover {
+    color: #ffda79;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background: #007bff;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.nav-link:hover::after {
+    transform: scaleX(1);
+}
+
+.fa-shopping-cart, .fa-user-circle {
+    font-size: 20px;
+    transition: transform 0.3s ease;
+}
+
+.logo {
+    width: 80px;
+    height: 9vh;
+    border-radius: 40px;
+}
+
+.nav-item:hover .fa-shopping-cart,
+.nav-item:hover .fa-user-circle {
+    transform: scale(1.2);
+    color: #007bff;
+}
+
+.btn-outline-success {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-outline-success:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.navbar-icons {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-icons .nav-link {
+    display: flex;
+    align-items: center;
+    font-size: 18px; 
+    margin-right: 15px;
+    color: white;
+}
+
+.navbar-icons .nav-link i {
+    margin-left: 5px;
+}
+
+.hover-dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background: linear-gradient(90deg, #43cea2, #185a9d);
+    border: 1px solid #ddd;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  
+}
+.dropdown-item{
+    color: white;
+}
+.drop {
+    position: relative;
+   
+}
+
+.product-description {
+    display: none;
+    position: absolute;
+    left: 110%;
+    top: 0;
+      background: linear-gradient(90deg, #43cea2, #185a9d);
+    padding: 5px;
+    border: 1px solid #ccc;
+    width: 300px;
+    z-index: 10;
+    font-size: 0.875rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+ .drop:hover .product-description {
+    display: block;
+}
+
+.product-description {
+    transition: opacity 0.3s ease;
+}
